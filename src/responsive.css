@@ -1,0 +1,64 @@
+/* Additional responsive styles for Upworn */
+
+/* Mobile-first approach */
+@media (max-width: 640px) {
+  .hero-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .hero-image-container {
+    margin-top: 2rem;
+  }
+  
+  .floating-image {
+    transform: scale(0.8);
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .hero-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .how-it-works-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* Desktop enhancements */
+@media (min-width: 1025px) {
+  .hero-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .how-it-works-container {
+    min-height: 90vh;
+  }
+}
+
+/* Ensure smooth transitions on all devices */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Improve accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

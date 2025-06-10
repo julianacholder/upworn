@@ -1,0 +1,51 @@
+/* App.css - Custom styles for Upworn */
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animation for the How It Works section */
+.step-transition {
+  transition: all 0.5s ease-in-out;
+}
+
+.phone-image-transition {
+  transition: all 0.7s ease-in-out;
+}
+
+/* Hover effects for cards */
+.card-hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+}
+
+/* Image placeholder styles */
+.image-placeholder {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-placeholder::after {
+  content: "Replace with actual image";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-padding {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
