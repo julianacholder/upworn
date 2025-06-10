@@ -2,7 +2,7 @@ import React from 'react';
 import headerImageSrc from '../assets/HeaderImage.png'; // Import the image
 import Bag from '../assets/bag.png'; // Import the bag image
 import Trouser from '../assets/trouser.png'; // Import the trouser image
-import People from '../assets/People.png'; // Import the people image
+import People from '../assets/people.png'; // Import the people image
 import Person from '../assets/Frame 2.png'; // Import the person image
 import Peer from '../assets/Peercoin.png'; // Import the Peercoin image
 import Arrow from '../assets/arrowcircle.png'; // Import the arrow image
