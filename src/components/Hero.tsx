@@ -1,7 +1,6 @@
 import React from 'react';
 import headerImageSrc from '../assets/HeaderImage.png'; // Import the image
-import cardImage001 from '../assets/001.png'; // Import 001.png
-import cardImage002 from '../assets/002.png'; // Import 002.png
+
 
 const Hero: React.FC = () => {
   return (

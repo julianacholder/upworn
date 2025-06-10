@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 // Import your dotted world map image
 import worldMapImage from '../assets/map (1).svg'; // Update this path to match your image location
 

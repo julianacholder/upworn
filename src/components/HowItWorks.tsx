@@ -4,9 +4,8 @@ import step2Image from '../assets/phone2.svg';
 import step3Image from '../assets/phone3.svg';
 import step4Image from '../assets/phone4.svg';
 
-// Placeholder Icon Components
-// You can replace these with more detailed SVGs or icon library components
-const HomeIcon: React.FC<{ className?: string; isActive?: boolean }> = ({ className, isActive }) => (
+// Placeholder Icon Components - Removed unused className parameter
+const HomeIcon: React.FC<{ isActive?: boolean }> = ({ isActive }) => (
  <img 
   width="32" 
   height="32" 
@@ -16,32 +15,32 @@ const HomeIcon: React.FC<{ className?: string; isActive?: boolean }> = ({ classN
 />
 );
 
-const HandHoldingHeartIcon: React.FC<{ className?: string; isActive?: boolean }> = ({ className, isActive }) => (
+const HandHoldingHeartIcon: React.FC<{ isActive?: boolean }> = ({ isActive }) => (
  <img 
   width="32" 
   height="32" 
   src={isActive ? "https://img.icons8.com/fluency-systems-regular/32/ffffff/hand-holding-heart.png" : "https://img.icons8.com/fluency-systems-regular/32/0E470F/hand-holding-heart.png"}
-  alt="home"
+  alt="hand holding heart"
   className="w-6 h-6 sm:w-8 sm:h-8"
 />
 );
 
-const SafetyCollectionPlaceIcon: React.FC<{ className?: string; isActive?: boolean }> = ({ className, isActive }) => (
+const SafetyCollectionPlaceIcon: React.FC<{ isActive?: boolean }> = ({ isActive }) => (
  <img 
   width="32" 
   height="32" 
   src={isActive ? "https://img.icons8.com/fluency-systems-regular/32/ffffff/crowd.png" : "https://img.icons8.com/fluency-systems-regular/32/0E470F/crowd.png"}
-  alt="home"
+  alt="crowd"
   className="w-6 h-6 sm:w-8 sm:h-8"
 />
 );
 
-const WorldIcon: React.FC<{ className?: string; isActive?: boolean }> = ({ className, isActive }) => (
+const WorldIcon: React.FC<{ isActive?: boolean }> = ({ isActive }) => (
  <img 
   width="32" 
   height="32" 
   src={isActive ? "https://img.icons8.com/fluency-systems-regular/32/ffffff/green-earth.png" : "https://img.icons8.com/fluency-systems-regular/32/0E470F/green-earth.png"}
-  alt="home"
+  alt="green earth"
   className="w-6 h-6 sm:w-8 sm:h-8"
 />
 );
@@ -180,11 +179,6 @@ useEffect(() => {
                   } : {}}
                   >
                     <step.icon 
-                      className={`${
-                        activeStep === index
-                          ? 'text-white'
-                          : 'text-green-800'
-                      }`} 
                       isActive={activeStep === index}
                     />
                   </div>
