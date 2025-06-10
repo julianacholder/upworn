@@ -17,7 +17,7 @@ const FashionPurpose: React.FC = () => {
           <div className="bg-white rounded-lg p-6 text-center flex flex-col items-center shadow-md hover:shadow-2xl transition-shadow duration-300 cursor-pointer ">
             <div className="bg-green-100 p-4 rounded-full mb-6">
               {/* Waste SVG Icon */}
-              <img src="/public/Waste.svg" alt="Waste Icon" className="h-7 w-7 text-green-700" />
+              <img src="/Waste.svg" alt="Waste Icon" className="h-7 w-7 text-green-700" />
             </div>
             <h3 className="font-medium text-lg sm:text-xl mb-3">Textile Waste</h3>
             <p className="sm:text-base text-sm">
@@ -28,7 +28,7 @@ const FashionPurpose: React.FC = () => {
           {/* Card 2 - Clothes to Communities */}
           <div className="bg-white rounded-lg p-6 text-center flex flex-col items-center shadow-md hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
             <div className="bg-green-100 p-4 rounded-full mb-6">
-              <img src="/public/People.svg" alt="People Icon" className="h-7 w-7 text-green-700" />
+              <img src="/People.svg" alt="People Icon" className="h-7 w-7 text-green-700" />
             </div>
             <h3 className="font-medium text-lg sm:text-xl mb-3">Clothes to Communities</h3>
             <p className="sm:text-base text-sm">
@@ -39,7 +39,7 @@ const FashionPurpose: React.FC = () => {
           {/* Card 3 - Digital Closet Refresh */}
           <div className="bg-white rounded-lg p-6 text-center flex flex-col items-center shadow-md hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
             <div className="bg-green-100 p-4 rounded-full mb-6">
-              <img src="/public/Refresh.svg" alt="Refresh Icon" className="h-7 w-7 text-green-700" />
+              <img src="/Refresh.svg" alt="Refresh Icon" className="h-7 w-7 text-green-700" />
             </div>
             <h3 className="font-medium text-lg sm:text-xl mb-3">Digital Closet Refresh</h3>
             <p className="sm:text-base text-sm">

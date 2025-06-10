@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Logo from '../assets/upworn-logo.png'; // Import the logo image
 
 
 const Header: React.FC = () => {
@@ -17,7 +18,7 @@ const Header: React.FC = () => {
       {/* Logo - Replace with actual logo image */}
       <div className="flex items-center">
         <a href="/" className="text-2xl font-bold text-green-700">
-          <img src="/src/assets/upworn-logo.png" alt="Upworn Logo" className="sm:h-10 h-8" />
+          <img src={Logo} alt="Upworn Logo" className="sm:h-10 h-8" />
         </a>                                             
       </div>
             

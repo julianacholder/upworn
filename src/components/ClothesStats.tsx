@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 // Import your dotted world map image
-import worldMapImage from '../assets/map (1).svg'; // Update this path to match your image location
+import worldMapImage from '../assets/map (1).svg';
+import Avatar1 from "../assets/avatar1.jpg"
+import Avatar2 from '../assets/alison-erickson-Zt8IkNfhk54-unsplash.jpg' 
+import Avatar3 from '../assets/kim-carpenter-IHIgnhLvz5Q-unsplash.jpg'
+import Avatar4 from '../assets/african-american-woman-smiling-with-hand-chin.jpg'// Update this path to match your image location
 
 const MapImpactSection = () => {
   const [animatedAmount, setAnimatedAmount] = useState(0);
@@ -111,16 +115,16 @@ const MapImpactSection = () => {
                   {/* Avatar Stack */}
                   <div className="flex -space-x-1 sm:-space-x-2">
                     <div className="w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 rounded-full bg-gradient-to-r from-green-400 to-green-500 border-1 sm:border-2 border-white">
-                      <img className='w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 rounded-full' src="/src/assets/avatar1.jpg" alt="" />
+                      <img className='w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 rounded-full' src= {Avatar1}  alt="" />
                     </div>
                     <div className="w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 rounded-full bg-gradient-to-r from-blue-400 to-blue-500 border-1 sm:border-2 border-white">
-                      <img className='w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 rounded-full' src="/src/assets/alison-erickson-Zt8IkNfhk54-unsplash.jpg" alt="" />
+                      <img className='w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 rounded-full' src={Avatar2}  alt="" />
                     </div>
                     <div className="w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 rounded-full bg-gradient-to-r from-purple-400 to-purple-500 border-1 sm:border-2 border-white">
-                      <img className='w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 rounded-full' src="/src/assets/kim-carpenter-IHIgnhLvz5Q-unsplash.jpg" alt="" />
+                      <img className='w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 rounded-full' src={Avatar3}  alt="" />
                     </div>
                     <div className="w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 rounded-full bg-gradient-to-r from-orange-400 to-orange-500 border-1 sm:border-2 border-white">
-                      <img className='w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 rounded-full' src="/src/assets/african-american-woman-smiling-with-hand-chin.jpg" alt="" />
+                      <img className='w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 rounded-full' src={Avatar4}  alt="" />
                     </div>
                     <div className="w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 rounded-full bg-gray-300 border-1 sm:border-2 border-white flex items-center justify-center text-[8px] sm:text-xs text-gray-600 font-semibold">
                       +{animatedContributors - 4}

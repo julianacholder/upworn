@@ -1,6 +1,11 @@
 import React from 'react';
 import headerImageSrc from '../assets/HeaderImage.png'; // Import the image
-
+import Bag from '../assets/bag.png'; // Import the bag image
+import Trouser from '../assets/trouser.png'; // Import the trouser image
+import People from '../assets/People.png'; // Import the people image
+import Person from '../assets/Frame 2.png'; // Import the person image
+import Peer from '../assets/Peercoin.png'; // Import the Peercoin image
+import Arrow from '../assets/arrowcircle.png'; // Import the arrow image
 
 const Hero: React.FC = () => {
   return (
@@ -18,11 +23,11 @@ const Hero: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">
               <a href="#contact" className="border border-black text-black text-base sm:text-lg px-4 sm:px-6 py-2.5 rounded-full flex items-center justify-center hover:scale-105 hover:shadow-lg">
                 Join Upworn Now
-                <img className='h-7 sm:h-9 ml-2' src="/src/assets/Peercoin.png" alt="" />
+                <img className='h-7 sm:h-9 ml-2' src={Peer} alt="" />
               </a>
               <a href="#learn" className="text-black text-base sm:text-lg flex items-center justify-center hover:scale-105">
                 Learn More
-                <img className='h-10 sm:h-12 ml-2' src="/src/assets/arrowcircle.png" alt="" />
+                <img className='h-10 sm:h-12 ml-2' src={Arrow} alt="" />
               </a>
             </div>
           </div>
@@ -45,12 +50,12 @@ const Hero: React.FC = () => {
           <div className="flex-1">
             <div className='flex items-center gap-3 sm:gap-5 mb-3 sm:mb-5'>
               <p className='bg-white rounded-3xl py-0.5 px-2 text-sm'>001</p>
-              <img src="/src/assets/Frame 2.png" alt="" className="" />
+              <img src={Person} alt="" className="" />
             </div>
             <p className='text-xl sm:text-2xl lg:text-3xl leading-[35px] sm:leading-[45px]'>Over 5000 thousand expected donations</p>
           </div>
          <div className="flex justify-center sm:justify-end">
-  <img src="/src/assets/bag.png" alt="" className="w-24 h-26 sm:w-auto sm:h-auto" />
+  <img src={Bag} alt="" className="w-24 h-26 sm:w-auto sm:h-auto" />
 </div>
         </div>
 
@@ -59,12 +64,12 @@ const Hero: React.FC = () => {
           <div className="flex-1">
             <div className='flex items-center gap-3 sm:gap-5 mb-3 sm:mb-5'>
               <p className='bg-white rounded-3xl py-0.5 px-2 text-sm'>002</p>
-              <img src="/src/assets/people.png" alt=""  />
+              <img src={People} alt=""  />
             </div>
             <p className='text-xl sm:text-2xl lg:text-3xl leading-[35px] sm:leading-[45px]'>Carbon emmisions reductions</p>
           </div>
           <div className="flex justify-center sm:justify-end">
-            <img src="/src/assets/trouser.png" alt="" className="w-24 h-26 sm:w-auto sm:h-auto" />
+            <img src={Trouser} alt="" className="w-24 h-26 sm:w-auto sm:h-auto" />
           </div>
         </div>
       </div>
