@@ -1,5 +1,6 @@
 import './App.css';
 import './responsive.css';
+import { Analytics } from '@vercel/analytics/react';
 
 // Components
 import Header from './components/Header';
@@ -25,7 +26,7 @@ function App() {
         <PartnerWaitlist />
         <Revolution />
       </main>
-    
+     <Analytics />
     </div>
   );
 }
